@@ -1,0 +1,166 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html {
+  font-size: 85%; /* This will reduce the size to 90% of the default */
+}
+
+body {
+ 
+    font-family: 'Open Sans', sans-serif; /* Default font for the entire document */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Default text color */
+    background-color: #030d2b;
+  
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.60%;
+  gap: 4%;
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+
+}
+.logo{
+  
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding-top: 10px;
+}
+
+.nav-links{
+  
+  display: flex;
+  font-size: 1.8rem;
+  list-style-type: none;
+  gap: 60px;
+  color: white;
+  padding-top: 10px;
+}
+
+.createnew{
+  
+  font-size: 1.8rem;
+  background-color: #E94560;
+  padding: 10px 20px;
+  border-radius: 20px;
+  list-style-type: none;
+}
+
+.intro {
+  background-image: url("../images/back.png");
+  background-position: center;
+  width: 88%;
+  height: 90%;
+  border-radius: 20px;
+  margin-left: 70px;
+  margin-top: 40px;
+  
+}
+.intro h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color:white;
+  padding-right: 160px;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: white;
+  padding-right: 100px;
+}
+
+.image-content img {
+  height: 440px;
+  width: 510px;
+  margin-top: 20px;
+ margin-right: 70px;
+}
+
+
+.grid-container {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 43px;
+}
+.blogs{
+  background-image: url("../images/back.png");
+  background-position: center;
+  width: 88%;
+  height: 90%;
+  border-radius: 20px;
+  margin-left: 70px;
+  margin-top: 40px; 
+}
+
+.blog_1{
+
+  display: flex;
+
+}
+.heading{
+  font-size: 2.8rem; 
+  padding-left: 90px; 
+  padding-top: 50px; 
+  color:white;
+
+}
+.blog_1{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.text{
+  padding-left: 30px;
+  padding-right: 50px;
+ 
+}
+.text h1{
+  font-size: 2.2rem;
+  padding-bottom: 8px;
+  color:white;
+  overflow: wrap;
+}
+.text p{
+  font-size: 1.4rem;
+  color: white;
+  padding-top: 10px;
+}
+.text .author{
+  font-size: 1.6rem;
+  color: aqua;
+  margin-top: 12px;
+}
+
+.changes{
+  display: inline-block; /* or inline-block or flex */
+  margin-top: 18px;
+  margin-right: 14px;
+  background-color: rgb(4, 75, 10);
+  padding: 15px ;
+  border-radius: 20px;
+ text-decoration: none;
+ color: white;
+ font-size: 1rem;
+ font-weight: bold;
+}
+.edit{
+  background-color: rgb(4, 75, 10);
+  
+}
+.delete{
+  background-color: rgb(126, 13, 9);
+}
+
+

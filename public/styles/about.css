@@ -1,0 +1,81 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  html {
+    font-size: 85%; /* This will reduce the size to 90% of the default */
+  }
+  
+  body{
+    font-family: 'Open Sans', sans-serif; /* Default font for the entire document */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Default text color */
+  }
+  .navbar a{
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    
+  
+  }
+  .logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 10px;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2.60%;
+    gap: 4%;
+    background-color: #030d2b;
+    padding-bottom: 2.60%;
+  }
+  .nav-links{
+    display: flex;
+    font-size: 1.8rem;
+    list-style-type: none;
+    gap: 60px;
+    color: white;
+    padding-top: 10px;
+  }
+  
+  .createnew{
+    font-size: 1.8rem;
+    background-color: #E94560;
+    padding: 10px 20px;
+    border-radius: 20px;
+    list-style-type: none;
+  }
+
+  main{
+  
+   padding: 50px 10px 30px 8px;
+  }
+  .features ,.security ,.focus ,.mission ,.intro h1{
+    font-size: 1.7rem;
+  
+  }
+  .features ,.security ,.focus ,.mission ,.intro p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  span{
+    font-weight: bold;
+  }
+  .features li{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-decoration: dotted;
+ 
+  }
+  .features ul{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }

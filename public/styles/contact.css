@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 85%; /* This will reduce the size to 90% of the default */
+}
+body{
+  font-family: 'Open Sans', sans-serif; /* Default font for the entire document */
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Default text color */
+}
+
+  .navbar a{
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    list-style-type: none;
+  
+  }
+  .logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 8px;
+  }
+  .navbar{
+    display: flex;
+    padding-top: 2.70%;
+    padding-left: 55px;
+    gap: 27%;
+    background-color: #030d2b;
+    padding-bottom: 2.70%;
+  }
+  .nav-links{
+    display: flex;
+    font-size: 1.8rem;
+    list-style-type: none;
+    gap: 60px;
+    color: white;
+    padding-top: 10px;
+  }
+
+  .createnew{
+    font-size: 1.8rem;
+    background-color: #E94560;
+    padding: 10px 20px;
+    border-radius: 20px;
+    list-style-type: none;
+  }
+
+  .container{
+    display: flex;
+  }
+  .book_logo{
+      margin: 50px 0px 0px 15%;
+  }
+
+  .book_logo h1 {
+      padding-top: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: Bold;
+  }
+  .book_logo ,p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+
+
+
+
+  .contact_text{
+    padding: 100px 180px 0px 100px;
+  }
+
+  .anchor{
+      text-align: center;
+      padding-top: 30px;
+  }
+  .anchor a{
+      text-decoration: none;
+      padding: 20px;
+
+  }
+  .anchor .email{
+    margin-bottom: 30px;
+    background-color: #0a6107;
+    width: 160px;
+    margin-left: 36.5%;
+    padding: 7px;
+    border-radius: 20px;
+   
+    
+    }
+  .email a{
+    color: white;
+    font-size: 1.4rem;
+    
+
+  }
+
+  .contact_text h1{
+      font-weight: lighter;
+  }
+  

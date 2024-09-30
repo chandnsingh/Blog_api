@@ -1,0 +1,200 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+html {
+    font-size: 85%; /* This will reduce the size to 90% of the default */
+
+  }
+
+  body {
+    background-color: #030d2b;
+   
+  font-family: 'Open Sans', sans-serif; /* Default font for the entire document */
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Default text color */
+
+  }
+  .navbar a{
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+  
+  }
+  .logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 8px;
+  }
+  .navbar{
+    display: flex;
+    padding-top: 2.60%;
+    padding-left: 55px;
+    gap: 27%;
+  }
+  .nav-links{
+    display: flex;
+    font-size: 1.8rem;
+    list-style-type: none;
+    gap: 60px;
+    color: white;
+    padding-top: 10px;
+  }
+  
+  .createnew{
+    font-size: 1.8rem;
+    background-color: #E94560;
+    padding: 10px 20px;
+    border-radius: 20px;
+    list-style-type: none;
+  }
+
+
+/* here below post section */
+
+
+
+.forms{
+  background-image: url("../images/back.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: 600px;
+    height: 520px;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 27%;
+    padding-left: 120px;
+    padding-right: 110px;
+    padding-top: 30px;
+    border-radius: 20px;
+}
+
+.editForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    flex-direction: column;
+    gap: 5px;
+}
+label{
+   
+   color: antiquewhite;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
+
+    
+}
+input{
+    background: white;
+    height: 50px;
+    width: 24.4rem;
+    border-radius: 20px;
+    margin-top: 6px;
+    padding-left: 10px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: lighter
+}
+.full-width{
+    background: darkcyan;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+textarea{
+  
+  background-color: white;
+  width: 90%;
+  height: 150px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  resize: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+
+
+textarea.invalid {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.error-message.visible {
+  display: block;
+}
+
+.word-count {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

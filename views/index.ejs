@@ -1,0 +1,66 @@
+<%-include("partials/header.ejs") %>
+
+<body class="home_page">
+    <main>
+      <nav class="navbar">
+        <h1 class="logo">Blogs</h1>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+        <div class="createnew">
+          <a href="/new" class="button">Create New</a>
+        </div> 
+       </nav>
+
+<section class="intro">
+  <div class="grid-container">
+    <div class="text-content">
+        <h1>CREATE YOUR BLOG</h1>
+        <p>
+            Welcome to our vibrant community of storytellers! 
+            Here, we believe that every voice matters and that each story has the power to inspire and connect.
+            Whether you're a seasoned writer or just beginning to find your words, our platform offer
+            s a space for your creativity to flourish. Share your unique insights, experiences, and passions
+             with a diverse audience eager to engage with your ideas. 
+             Join us in crafting a tapestry of narratives that reflect the richness of our collective human
+              experience. 
+        </p>
+    </div>
+    <div class="image-content">
+        <img src="./images/newblank-removebg-preview.png" alt="Laptop with blogging tools">
+    </div>
+</div>
+</section>
+
+<section class="blogs_post">
+<h1 class="heading">Best Blogs In The world</h1>
+<% posts.forEach(post=> { %>
+<div class="blogs blog_1">
+    <div class="image">
+        <img class="img1" src=<%=  randomblogimg %> alt="Laptop with blogging tools" height="200px">
+        <a class="changes edit" href="/edit/<%= post.id %>">Update Post</a>
+        <a class="changes delete" href="/api/posts/delete/<%= post.id %>">Delete Post</a>
+    </div>
+    <div class="text">
+        <h1><%=post.title%></h1>
+        <p><%=post.date %></p>
+        <p >
+            <%=post.content%>
+        </p>
+        <p class="author">
+            <%= post.author %>
+        </p>
+    </div>
+</div>
+<% }); %>
+
+
+
+
+</section>
+
+
+<%-include("partials/footer.ejs") %> 
+
