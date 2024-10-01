@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node api_server.js & node backend.js"
+    "dev": "concurrently \"nodemon backend.js\" \"nodemon api_server.js\"",
+    "start": "node api_server.js & node backend.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +17,8 @@
     "body-parser": "^1.20.2",
     "ejs": "^3.1.10",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
