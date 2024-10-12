@@ -8,19 +8,28 @@
 
 </head>
 <body>
-    <div class="nav">
-        <nav class="navbar">
-            <h1 class="logo">Blogs</h1>
-            <ul class="nav-links">
-              <li><a href="/">Home</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/about">About</a></li>
-            </ul>
-            <div class="createnew">
-              <a href="/new" class="button">Create New</a>
-            </div> 
-           </nav>
-    </div>
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" fill=""><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="contact">Contact</a></li>
+          <li><a href="/new">Create New</a></li>
+        </ul>
+        <ul class="mobile">
+        <li class="head"><a href="#">Blogs</a></li>
+          <li class="hideOnMobile"><a href="/">Home</a></li>
+          <li class="hideOnMobile"><a href="/about">About</a></li>
+          <li class="hideOnMobile"><a href="/contact">Contact</a></li>
+          <li class="hideOnMobile"><a href="/new">Create New</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg width="30" height="30" viewBox="0 0 100 80" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+          </a></li>
+        </ul>
+      </nav>
     <main>
    <section class="intro">
     <h1>
@@ -81,5 +90,16 @@
     </p>
    </section>
 </main>
+
+<script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
 
 <%-include("partials/footer.ejs") %> 

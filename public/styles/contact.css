@@ -11,97 +11,132 @@ body{
   color: #333; /* Default text color */
 }
 
-  .navbar a{
-    text-decoration: none;
-    color: rgb(255, 253, 253);
-    list-style-type: none;
-  
-  }
-  .logo{
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    padding-top: 8px;
-  }
-  .navbar{
-    display: flex;
-    padding-top: 2.70%;
-    padding-left: 55px;
-    gap: 27%;
-    background-color: #030d2b;
-    padding-bottom: 2.70%;
-  }
-  .nav-links{
-    display: flex;
-    font-size: 1.8rem;
-    list-style-type: none;
-    gap: 60px;
-    color: white;
-    padding-top: 10px;
-  }
+nav{
+  background-color: #030b24;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+  font-size: 1.5rem;
+}
+.head a{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-left: 40px;
+}
+nav a{
+  margin-right: 60px;
+  height: 100%;
+  padding: 0 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+nav a:hover{
+  background-color: #085da3;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
 
-  .createnew{
-    font-size: 1.8rem;
-    background-color: #E94560;
-    padding: 10px 20px;
-    border-radius: 20px;
-    list-style-type: none;
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
   }
-
-  .container{
-    display: flex;
+  .menu-button{
+    display: block;
   }
-  .book_logo{
-      margin: 50px 0px 0px 15%;
+}
+@media(max-width: 490px){
+  .sidebar{
+    width: 100%;
   }
-
-  .book_logo h1 {
-      padding-top: 20px;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: Bold;
+  nav a{
+    margin-right: 5px
   }
-  .book_logo ,p{
-    padding-top: 20px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: lighter;
-  }
+}
 
 
-
-
-  .contact_text{
-    padding: 100px 180px 0px 100px;
-  }
-
-  .anchor{
-      text-align: center;
-      padding-top: 30px;
-  }
-  .anchor a{
-      text-decoration: none;
-      padding: 20px;
-
-  }
-  .anchor .email{
-    margin-bottom: 30px;
-    background-color: #0a6107;
-    width: 160px;
-    margin-left: 36.5%;
-    padding: 7px;
-    border-radius: 20px;
-   
-    
+    .container{
+      width: 1000px;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 70px;
+      gap: 60px;
     }
-  .email a{
-    color: white;
-    font-size: 1.4rem;
+    .container .left .book img{
+      border-radius: 20px;
+      height: 220px;
+      width: 330px;
+    }
+    .container .left .details{
+     text-align: center;
+    }
+    .container .right .info h1{
+      font-weight: 100px;
+      font-size: 1.3rem;
+    }
+    .container .right .email{
+      text-align: center;
+      margin-top: 30px;
+    }
+    .container .right .email a{
+      color: white;
+      text-decoration: none;
+      background-color: rgb(7, 105, 73);
+      padding: 15px 25px 15px 25px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight:bold;
+      }
+      .social_media{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 30px;
+      }
+ @media(max-width:500px){
     
-
+  .container{
+    width: 400px;
+    flex-direction: column;
   }
-
-  .contact_text h1{
-      font-weight: lighter;
+  .container .left .book img{
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
   }
-  
+ }

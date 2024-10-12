@@ -2,6 +2,8 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
   
 }
@@ -12,88 +14,280 @@ html {
 body {
  
     font-family: 'Open Sans', sans-serif; /* Default font for the entire document */
-    line-height: 1.6; /* Improve readability */
     color: #333; /* Default text color */
     background-color: #030d2b;
-  
 }
-.navbar{
+
+nav{
+  background-color: #030b24;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+}
+nav ul{
+  width: 100%;
+  list-style: none;
   display: flex;
-  justify-content: space-around;
-  padding-top: 2.60%;
-  gap: 4%;
+  justify-content: flex-end;
+  align-items: center;
 }
-.navbar a{
-  text-decoration: none;
-  color: white;
-  list-style-type: none;
-
-}
-.logo{
-  
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  padding-top: 10px;
-}
-
-.nav-links{
-  
-  display: flex;
-  font-size: 1.8rem;
-  list-style-type: none;
-  gap: 60px;
-  color: white;
-  padding-top: 10px;
-}
-
-.createnew{
-  
-  font-size: 1.8rem;
-  background-color: #E94560;
-  padding: 10px 20px;
-  border-radius: 20px;
-  list-style-type: none;
-}
-
-.intro {
-  background-image: url("../images/back.png");
-  background-position: center;
-  width: 88%;
-  height: 90%;
-  border-radius: 20px;
-  margin-left: 70px;
-  margin-top: 40px;
-  
-}
-.intro h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-  color:white;
-  padding-right: 160px;
-}
-
-.intro p {
+nav li{
+  height: 50px;
   font-size: 1.5rem;
-  line-height: 1.4;
-  color: white;
-  padding-right: 100px;
 }
-
-.image-content img {
-  height: 440px;
-  width: 510px;
-  margin-top: 20px;
- margin-right: 70px;
+.head a{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-left: 40px;
 }
-
-
-.grid-container {
+nav a{
+  margin-right: 60px;
+  height: 100%;
+  padding: 0 10px;
+  text-decoration: none;
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 43px;
+  align-items: center;
+  color: white;
 }
+nav a:hover{
+  background-color: #085da3;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 490px){
+  .sidebar{
+    width: 100%;
+  }
+  nav a{
+    margin-right: 5px
+  }
+}
+
+
+
+/*here intro css is written */
+.intro{
+  background-image: url("../images/back.png");
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  width: 1220px;
+  margin: 60px;
+  border-radius: 20px;
+  display: flex;
+  padding: 30px;
+  gap: 10px;
+}
+.left{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left .topic{
+  color: white;
+  font-size: 2.2rem;
+  line-height: normal;
+}
+.left .quote{
+  color: white;
+  font-size: 1.5rem;
+}
+@media (max-width : 850px){
+  .intro{
+      width: 790px;
+      margin: 15px;
+      padding: 10px;
+      gap: 5px;
+  }
+  .left .topic{
+      font-size: 1.5rem;
+  }
+  .left .quote{
+      font-size: 1rem;
+  }
+  .right .laptop img{
+      height: 330px;
+      width: 420px;
+  }
+}
+@media (max-width : 770px){
+  .intro{
+      width: 680px;
+      margin: 30px;
+      padding: 10px;
+      gap: 5px;
+  }
+  .left .topic{
+      font-size: 1.4rem;
+  }
+  .left .quote{
+      font-size: .8rem;
+  }
+  .right .laptop img{
+      height: 330px;
+      width: 420px;
+  }
+}
+
+
+
+@media (max-width : 490px){
+  .intro{
+      width: 450px;
+      margin: 20px;
+      flex-direction: column-reverse;
+      padding: 10px;
+      gap: 5px;
+  }
+  .left .topic{
+      font-size: 1.7rem;
+  }
+  .left .quote{
+      font-size: 1.2rem;
+  }
+  .right .laptop img{
+      height: 330px;
+      width: 420px;
+  }
+  
+
+}
+
+
+/* here blog post css is here */
+
+
+.container{
+  background-image: url("../images/back.png");
+  background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+  width: 1220px;
+  margin: 60px;
+  
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+.left_img .btn{
+margin-top: 10px;
+}
+.left_img .btn a{
+  color: white;
+  font-size: 1.8rem;
+
+}
+.right_text{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.left_img .photo img{
+  height: 180px;
+  border-radius: 10px;
+}
+.right_text .heading{
+  font-size: 1.3rem;
+
+}
+.right_text .time,.text,.name{
+  font-size: 15px;
+
+}
+.right_text .name h2{
+  color: rgb(12, 156, 156);
+}
+
+.left_img .btn a{
+  font-size: 1.5rem;
+  padding: 5px;
+  font-weight: bold;
+}
+.left_img .btn .update{
+  color: rgb(6, 128, 47);
+}
+.left_img .btn .delete{
+  color: rgb(185, 9, 9);
+}
+.posts .head{
+  font-size: 2.8rem; 
+  padding-left: 60px; 
+  color:white;
+
+}
+
+@media (max-width : 490px){
+  .container{
+      margin-left: 10px;
+      width: 454px;
+      flex-direction: column;
+  }
+  .left_img .photo img{
+      height: 250px;
+      width: 415px;
+  }
+  .right_text .heading{
+    font-size: 1.2rem;
+  
+  }
+  .right_text .time,.text,.name{
+    font-size: 12px;
+  }
+  .right_text .text{
+    font-size: 15px;
+  }
+  .posts .heading{
+    font-size: 2rem; 
+    padding-left: 20px; 
+    color:white;
+  
+  }
+}
+
+
+
+/*
+
+
 .blogs{
   background-image: url("../images/back.png");
   background-position: center;
@@ -104,11 +298,6 @@ body {
   margin-top: 40px; 
 }
 
-.blog_1{
-
-  display: flex;
-
-}
 .heading{
   font-size: 2.8rem; 
   padding-left: 90px; 
@@ -118,8 +307,12 @@ body {
 }
 .blog_1{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
+  gap: 20px;
   padding: 20px;
+}
+.image{
+  margin: 0px;
 }
 .text{
   padding-left: 30px;
@@ -144,7 +337,7 @@ body {
 }
 
 .changes{
-  display: inline-block; /* or inline-block or flex */
+  display: inline-block; 
   margin-top: 18px;
   margin-right: 14px;
   background-color: rgb(4, 75, 10);
@@ -162,5 +355,8 @@ body {
 .delete{
   background-color: rgb(126, 13, 9);
 }
+*/
+
+/* for mobile view */
 
 

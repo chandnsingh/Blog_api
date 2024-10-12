@@ -1,11 +1,13 @@
 import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
+import multer from "multer"
 
 
 const app=express()
 const port=3000;
 const api_url="http://localhost:4000"
+
 
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static("public"))
@@ -36,20 +38,16 @@ app.get("/about",(req,res)=>{
 })
 
 app.get("/",async (req,res)=>{
-    var random=Math.floor(Math.random()*9)+1
-    var random_img= "./images/img_" +random +".png"
   
     try {
         const result=await axios(api_url+"/posts")
         res.render("index",{
             posts:result.data,
-            randomblogimg: random_img,
             eurl: eurl ,
             iurl: iurl,
             furl: furl,
             lurl: lurl
         })
-        console.log(random)
     } catch (error) {
         res.send(error.message)
     }
@@ -65,18 +63,30 @@ app.get("/new",(req,res)=>{
         lurl: lurl
     })
 })
-app.post("/api/posts",async (req,res)=>{
- 
+const storage=multer.diskStorage({
+    destination:function (req,file,cb){
+        return cb(null ,"./public/blog_images")
+    },
+    filename:function(req,file,cb){
+        return cb(null ,`img_${file.originalname}`)
+    }
+})
+const upload =multer({storage})
 
+app.post("/api/posts",upload.single('blog_image'),async (req,res)=>{
+    const blog_image=req.file
     try {
-        const result=await axios.post(api_url +"/posts",
-          req.body
-        )
+        const result=await axios.post(api_url +"/posts",req.body)
+        
       res.redirect("/")
+     console.log(blog_image)
+      console.log(req.body)
     } catch (error) {
         res.send(error.message)
     }
 })
+
+
 app.get("/edit/:id",async(req,res)=>{
     try {
         const result=await axios.get(api_url+`/posts/${req.params.id}`)

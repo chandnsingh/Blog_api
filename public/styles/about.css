@@ -10,47 +10,91 @@
   }
   
   body{
-    font-family: 'Open Sans', sans-serif; /* Default font for the entire document */
-    line-height: 1.6; /* Improve readability */
-    color: #333; /* Default text color */
+    font-family: 'Open Sans', sans-serif; 
+    line-height: 1.6; 
+
   }
-  .navbar a{
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-    
-  
+  nav{
+    background-color: #030b24;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 35px;
   }
-  .logo{
-    font-size: 2rem;
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  .head a{
+    font-size: 2.4rem;
     font-weight: bold;
-    color: white;
-    padding-top: 10px;
+    margin-left: 40px;
   }
-  .navbar{
+  nav a{
+    margin-right: 60px;
+    height: 100%;
+    padding: 0 10px;
+    text-decoration: none;
     display: flex;
-    justify-content: space-around;
-    padding-top: 2.60%;
-    gap: 4%;
-    background-color: #030d2b;
-    padding-bottom: 2.60%;
-  }
-  .nav-links{
-    display: flex;
-    font-size: 1.8rem;
-    list-style-type: none;
-    gap: 60px;
+    align-items: center;
     color: white;
-    padding-top: 10px;
   }
+  nav a:hover{
+    background-color: #085da3;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+    color: black;
+  }
+  .menu-button{
+    display: none;
+  }
+
   
-  .createnew{
-    font-size: 1.8rem;
-    background-color: #E94560;
-    padding: 10px 20px;
-    border-radius: 20px;
-    list-style-type: none;
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
   }
+  @media(max-width: 490px){
+    .sidebar{
+      width: 100%;
+    }
+    nav a{
+      margin-right: 5px
+    }
+  }
+
+  /*below it about section */
 
   main{
   
