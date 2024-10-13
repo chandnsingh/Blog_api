@@ -14,10 +14,11 @@ html {
   color: #333; 
   }
 /* nabar css */
+
 nav{
-  background-color: #030b24;
+  background-color: #02091d;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  padding: 35px;
+  padding: 30px;
 }
 nav ul{
   width: 100%;
@@ -30,11 +31,7 @@ nav li{
   height: 50px;
   font-size: 1.5rem;
 }
-.head a{
-  font-size: 2.4rem;
-  font-weight: bold;
-  margin-left: 40px;
-}
+
 nav a{
   margin-right: 60px;
   height: 100%;
@@ -43,9 +40,21 @@ nav a{
   display: flex;
   align-items: center;
   color: white;
+  transition: transform 0.3s ease;
 }
 nav a:hover{
-  background-color: #085da3;
+  background-color: #0b3658;
+  transform: scale(0.9);
+}
+.head a{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-left: 40px;
+  transition: none;
+}
+.head a:hover{
+  background-color: #02091d;
+  transform: none;
 }
 nav li:first-child{
   margin-right: auto;
@@ -74,6 +83,7 @@ nav li:first-child{
 .menu-button{
   display: none;
 }
+
 @media(max-width: 800px){
   .hideOnMobile{
     display: none;
@@ -88,6 +98,13 @@ nav li:first-child{
   }
   .menu-button a{
     margin-right: 2px;
+  }
+  nav{
+    padding: 20px 10px 20px 10px;
+  }
+  nav{
+
+    padding: 20px;
   }
 }
 @media(max-width: 500px){
@@ -105,6 +122,9 @@ nav li:first-child{
   .menu-button a{
     margin-right: 2px;
   }
+  nav{
+    padding: 20px 9.5px 20px 9.5px;
+  }
 }
 @media(max-width: 400px){
   .sidebar{
@@ -120,6 +140,9 @@ nav li:first-child{
   }
   .menu-button a{
     margin-right: 0px;
+  }
+  nav{
+    padding: 16px 7px 16px 7px;
   }
 }
 
@@ -191,6 +214,10 @@ input{
     padding: 15px;
     font-weight: bold;
     margin-top: 10px;
+    transition: transform 0.3s ease;;
+}
+.full-width:hover{
+  transform: scale(0.9);;
 }
 textarea{
   

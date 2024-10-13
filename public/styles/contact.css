@@ -12,9 +12,9 @@ body{
 }
 
 nav{
-  background-color: #030b24;
+  background-color: #02091d;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  padding: 35px;
+  padding: 30px;
 }
 nav ul{
   width: 100%;
@@ -27,11 +27,7 @@ nav li{
   height: 50px;
   font-size: 1.5rem;
 }
-.head a{
-  font-size: 2.4rem;
-  font-weight: bold;
-  margin-left: 40px;
-}
+
 nav a{
   margin-right: 60px;
   height: 100%;
@@ -40,9 +36,21 @@ nav a{
   display: flex;
   align-items: center;
   color: white;
+  transition: transform 0.3s ease;
 }
 nav a:hover{
-  background-color: #085da3;
+  background-color: #0b3658;
+  transform: scale(0.9);
+}
+.head a{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-left: 40px;
+  transition: none;
+}
+.head a:hover{
+  background-color: #02091d;
+  transform: none;
 }
 nav li:first-child{
   margin-right: auto;
@@ -67,9 +75,15 @@ nav li:first-child{
 }
 .sidebar a{
   width: 100%;
+  color: black;
 }
 .menu-button{
   display: none;
+}
+nav .new a{
+  background-color: #f57e00;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 @media(max-width: 800px){
@@ -87,7 +101,11 @@ nav li:first-child{
   .menu-button a{
     margin-right: 2px;
   }
+  nav{
+    padding: 20px;
+  }
 }
+
 @media(max-width: 500px){
   .sidebar{
     width: 100%;
@@ -102,6 +120,9 @@ nav li:first-child{
   }
   .menu-button a{
     margin-right: 2px;
+  }
+  nav{
+    padding: 20px 9.5px 20px 9.5px;
   }
 }
 @media(max-width: 400px){
@@ -119,6 +140,9 @@ nav li:first-child{
   .menu-button a{
     margin-right: 0px;
   }
+  nav{
+    padding: 16px 7px 16px 7px;
+  }
 }
 
 
@@ -134,6 +158,10 @@ nav li:first-child{
       border-radius: 20px;
       height: 220px;
       width: 330px;
+      transition:  transform 0.3s ease; ;
+    }
+    .container .left .book img:hover{
+      transform: scale(0.95);
     }
     .container .left .details{
      text-align: center;
@@ -154,12 +182,21 @@ nav li:first-child{
       border-radius: 10px;
       font-size: 1rem;
       font-weight:bold;
-      }
+     
+    }
+    
+    
       .social_media{
         display: flex;
         justify-content: center;
         margin-top: 30px;
         gap: 30px;
+      }
+      .container a{
+        transition: transform 0.3s ease;
+      }
+      .container  a:hover{
+        transform: scale(0.9);
       }
  @media(max-width:500px){
     
