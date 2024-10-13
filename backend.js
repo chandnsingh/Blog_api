@@ -39,7 +39,11 @@ app.get("/about",(req,res)=>{
 })
 
 app.get("/",async (req,res)=>{
+<<<<<<< HEAD
     const random=Math.floor(Math.random()*9)+1
+=======
+    const random=Math.floor(Math.random()*8)+1
+>>>>>>> 7053226200c64b3dbe96f72a405e461e508c03fb
     try {
         const result=await axios(api_url+"/posts")
         res.render("index",{
