@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
 import multer from "multer"
+import path from "path"
 
 
 const app=express()
@@ -38,10 +39,11 @@ app.get("/about",(req,res)=>{
 })
 
 app.get("/",async (req,res)=>{
-  
+    const random=Math.floor(Math.random()*10)+1
     try {
         const result=await axios(api_url+"/posts")
         res.render("index",{
+            random:random,
             posts:result.data,
             eurl: eurl ,
             iurl: iurl,
@@ -65,19 +67,20 @@ app.get("/new",(req,res)=>{
 })
 const storage=multer.diskStorage({
     destination:function (req,file,cb){
-        return cb(null ,"./public/blog_images")
+        cb(null ,"./public/blog_images")
     },
     filename:function(req,file,cb){
-        return cb(null ,`img_${file.originalname}`)
+        console.log(file)
+       cb(null ,Date.now() + path.extname(file.originalname))
     }
 })
 const upload =multer({storage})
 
 app.post("/api/posts",upload.single('blog_image'),async (req,res)=>{
-    const blog_image=req.file
+    const blog_image=req.file.filename
+   
     try {
         const result=await axios.post(api_url +"/posts",req.body)
-        
       res.redirect("/")
      console.log(blog_image)
       console.log(req.body)

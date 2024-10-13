@@ -49,11 +49,12 @@
 
 <section class="posts">
 <h1 class="head">Best Blogs In The world</h1>
+
 <% posts.forEach(post=> { %>
 <div class="container">
   <div class="left_img">
       <div class="photo">
-        <img src="../blog_images/<%= post.id %>" alt="">
+        <img src="../blog_images/IMG_<%= random %>.png" alt="">
       </div>
       <div class="btn">
         <a class="update" href="/edit/<%= post.id %>">UPDATE</a>

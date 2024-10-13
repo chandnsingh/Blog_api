@@ -307,7 +307,8 @@ margin-top: 10px;
       width: 770px;
   }
   .container .left_img .photo img{
-      height: 150px;
+    width: 100%;
+      height: auto;
   }
    .container .right_text .heading{
     font-size: 1.2rem;
@@ -333,7 +334,8 @@ margin-top: 10px;
       width: 700px;
   }
   .container .left_img .photo img{
-      height: 130px;
+    width: 100%;
+      height: auto;
   }
    .container .right_text .heading{
     font-size: 1.2rem;
@@ -411,81 +413,4 @@ margin-top: 10px;
 
   }
 }
-
-
-
-/*
-
-
-.blogs{
-  background-image: url("../images/back.png");
-  background-position: center;
-  width: 88%;
-  height: 90%;
-  border-radius: 20px;
-  margin-left: 70px;
-  margin-top: 40px; 
-}
-
-.heading{
-  font-size: 2.8rem; 
-  padding-left: 90px; 
-  padding-top: 50px; 
-  color:white;
-
-}
-.blog_1{
-  display: flex;
-  justify-content: start;
-  gap: 20px;
-  padding: 20px;
-}
-.image{
-  margin: 0px;
-}
-.text{
-  padding-left: 30px;
-  padding-right: 50px;
- 
-}
-.text h1{
-  font-size: 2.2rem;
-  padding-bottom: 8px;
-  color:white;
-  overflow: wrap;
-}
-.text p{
-  font-size: 1.4rem;
-  color: white;
-  padding-top: 10px;
-}
-.text .author{
-  font-size: 1.6rem;
-  color: aqua;
-  margin-top: 12px;
-}
-
-.changes{
-  display: inline-block; 
-  margin-top: 18px;
-  margin-right: 14px;
-  background-color: rgb(4, 75, 10);
-  padding: 15px ;
-  border-radius: 20px;
- text-decoration: none;
- color: white;
- font-size: 1rem;
- font-weight: bold;
-}
-.edit{
-  background-color: rgb(4, 75, 10);
-  
-}
-.delete{
-  background-color: rgb(126, 13, 9);
-}
-*/
-
-/* for mobile view */
-
 

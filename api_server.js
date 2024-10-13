@@ -30,10 +30,26 @@ let posts = [
     author: "Samuel Green",
     date: "2023-08-10T09:15:00Z",
   },
+  {
+    id: 4,
+    title: "10 Benefits of Drinking Water",
+    content:
+      "This blog outlines the essential advantages of staying hydrated. Key benefits include aiding in weight management by controlling calorie intake, improving skin health through enhanced moisture, and supporting physical performance during exercise. Additionally, adequate hydration is vital for cognitive function, reducing headaches, and lubricating joints.Overall, drinking enough water is crucial for maintaining health and well-being.",
+    author: "Kelsey Casselbury",
+    date: "2023-08-22T10:37:00Z",
+  },
+  {
+    id: 5,
+    title: "How Apple's iOS 16 makes your iPhone feel like new",
+    content:
+      "A deep dive into the new features of iOS 16, focusing on personalization and usability enhancements that make older iPhones feel fresh and modern. Search for How Apple's iOS 16 makes your iPhone feel like new on The Verge's website.Users can now personalize their lock screens with various fonts, colors, and widgets. This feature allows for more creative expression and better information visibility right from the lock screen.",
+    author: "Jon Porter",
+    date: "2022-09-12T04:55:00Z",
+  }
 ];
 
 
-let lastId = 3;
+let lastId = 5;
 
 
 app.use(bodyParser.json());

@@ -208,19 +208,6 @@ textarea{
   margin-top: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .input-container {
   display: flex;
   flex-direction: column;
@@ -250,16 +237,34 @@ textarea.invalid {
   color: #666;
 }
 
-@media (max-width:500px){
+@media (max-width:490px){
   .forms{
-    width: 480px;
-    height: 100%;
-    margin: 25px 5px 0px 0px;
+    width: 420px;
     padding-left: 60px;
     padding-right: 50px;
     padding-top: 30px;
     padding-bottom: 20px;
   }
+  input{
+    width: 22.8rem;
+   }
+   textarea{
+    width: 22.8rem;
+   }
+}
+@media (max-width:420px){
+  .forms{
+    width: 350px;
+    padding: 30px 30px 20px 30px;
+  }
+  input{
+    width: 21.4rem;
+   }
+   textarea{
+    width: 21.4rem;
+   }
+
+ 
 }
 
 
