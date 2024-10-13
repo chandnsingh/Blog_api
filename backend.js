@@ -77,13 +77,11 @@ const storage=multer.diskStorage({
 const upload =multer({storage})
 
 app.post("/api/posts",upload.single('blog_image'),async (req,res)=>{
-    const blog_image=req.file.filename
    
     try {
         const result=await axios.post(api_url +"/posts",req.body)
       res.redirect("/")
-     console.log(blog_image)
-      console.log(req.body)
+
     } catch (error) {
         res.send(error.message)
     }
