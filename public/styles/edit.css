@@ -173,7 +173,6 @@ input{
     border: none;
     margin-bottom: 10px;
     font-size: 1.2rem;
-    font-weight: lighter
 }
 .forms .image{
   padding-top: 10px;
@@ -214,8 +213,6 @@ textarea{
   max-width: 400px;
   margin-bottom: 10px;
 }
-
-
 
 textarea.invalid {
   border-color: red;
@@ -259,6 +256,7 @@ textarea.invalid {
   }
   input{
     width: 21.4rem;
+
    }
    textarea{
     width: 21.4rem;
