@@ -21,7 +21,7 @@ body {
 nav{
   background-color: #02091d;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  padding: 35px;
+  padding: 30px;
 }
 nav ul{
   width: 100%;
@@ -80,6 +80,11 @@ nav li:first-child{
 }
 
 @media(max-width: 800px){
+  
+nav{
+
+  padding: 20px;
+}
   .hideOnMobile{
     display: none;
   }
@@ -99,8 +104,8 @@ nav li:first-child{
     font-weight: bold;
     margin-left: 8px;
   }
-  .menu-button a{
-    margin-right: 2px;
+  nav{
+    padding: 20px 10px 20px 10px;
   }
 }
 @media(max-width: 400px){
@@ -108,7 +113,7 @@ nav li:first-child{
     width: 100%;
   }
   nav a{
-    margin-right: 5px
+    margin-right: 0px
   }
   .head a{
     font-size: 2.4rem;
@@ -117,6 +122,9 @@ nav li:first-child{
   }
   .menu-button a{
     margin-right: 0px;
+  }
+  nav{
+    padding: 16px 8px 16px 8px;
   }
 }
 
@@ -136,7 +144,7 @@ nav li:first-child{
   margin: 0 auto;
   padding: 30px;
   gap: 10px;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 .left{
   margin-top: 5px;
