@@ -79,15 +79,48 @@ nav li:first-child{
   .menu-button{
     display: block;
   }
+  .head a{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-left: 0px;
+  }
+  .menu-button a{
+    margin-right: 2px;
+  }
 }
-@media(max-width: 490px){
+@media(max-width: 500px){
   .sidebar{
     width: 100%;
   }
   nav a{
     margin-right: 5px
   }
+  .head a{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-left: 0px;
+  }
+  .menu-button a{
+    margin-right: 2px;
+  }
 }
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+  nav a{
+    margin-right: 5px
+  }
+  .head a{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-left: 0px;
+  }
+  .menu-button a{
+    margin-right: 0px;
+  }
+}
+
 
 
     .container{
@@ -106,8 +139,8 @@ nav li:first-child{
      text-align: center;
     }
     .container .right .info h1{
-      font-weight: 100px;
       font-size: 1.3rem;
+      font-weight: normal;
     }
     .container .right .email{
       text-align: center;
@@ -131,12 +164,26 @@ nav li:first-child{
  @media(max-width:500px){
     
   .container{
-    width: 400px;
+    width: 420px;
     flex-direction: column;
+    gap: 30px;
   }
   .container .left .book img{
     border-radius: 20px;
     height: auto;
     width: 100%;
   }
+}
+  @media(max-width:420px){
+    
+    .container{
+      width: 340px;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .container .left .book img{
+      border-radius: 20px;
+      height: auto;
+      width: 100%;
+    }
  }

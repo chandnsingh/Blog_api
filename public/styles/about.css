@@ -11,7 +11,6 @@
   
   body{
     font-family: 'Open Sans', sans-serif; 
-    line-height: 1.6; 
 
   }
   nav{
@@ -84,42 +83,65 @@
     .menu-button{
       display: block;
     }
+    .head a{
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-left: 0px;
+    }
+    .menu-button a{
+      margin-right: 2px;
+    }
   }
-  @media(max-width: 490px){
+  @media(max-width: 500px){
     .sidebar{
       width: 100%;
     }
     nav a{
       margin-right: 5px
     }
+    .head a{
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-left: 0px;
+    }
+    .menu-button a{
+      margin-right: 2px;
+    }
   }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+    nav a{
+      margin-right: 5px
+    }
+    .head a{
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-left: 0px;
+    }
+    .menu-button a{
+      margin-right: 0px;
+    }
+  }
+  
 
   /*below it about section */
 
   main{
-  
    padding: 50px 10px 30px 8px;
   }
-  .features ,.security ,.focus ,.mission ,.intro h1{
-    font-size: 1.7rem;
-  
+  main h1{
+    font-size: 2rem;
+    padding-bottom: 7px;
+
   }
-  .features ,.security ,.focus ,.mission ,.intro p{
+  main p{
     font-size: 1.2rem;
-    font-weight: lighter;
-    padding-top: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+    line-height: 1.8;
+    font-weight: 500px;
   }
   span{
-    font-weight: bold;
-  }
-  .features li{
-    font-size: 1.2rem;
-    font-weight: lighter;
-    text-decoration: dotted;
- 
-  }
-  .features ul{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    text-decoration: underline;
   }
