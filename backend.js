@@ -39,7 +39,7 @@ app.get("/about",(req,res)=>{
 })
 
 app.get("/",async (req,res)=>{
-    const random=Math.floor(Math.random()*10)+1
+    const random=Math.floor(Math.random()*9)+1
     try {
         const result=await axios(api_url+"/posts")
         res.render("index",{
@@ -50,6 +50,7 @@ app.get("/",async (req,res)=>{
             furl: furl,
             lurl: lurl
         })
+        console.log(random)
     } catch (error) {
         res.send(error.message)
     }
